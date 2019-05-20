@@ -1,0 +1,32 @@
+server:
+  port: 8101
+spring:
+  application:
+    name: config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          searchPaths: config #配置仓库路径
+          username: hailisun #访问git仓库的用户名
+          password: haili1991sun1010 #访问git仓库的用户密码
+          uri: https://github.com/hailisun/configcenter.git
+      label: master #配置仓库的分支
+  rabbitmq:
+    host: 127.0.0.1
+    port: 15672
+    username: guest
+    password: guest
+    virtualHost: /
+    publisherConfirms: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,bus-refresh

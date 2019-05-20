@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      name: user,database,redis
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config
+  application:
+    name: user
+    profiles:
+      active: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 8084

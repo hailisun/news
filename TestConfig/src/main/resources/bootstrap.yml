@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    config:
+      name: test
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8888/eureka/
+#server:
+#  port: 8081
+#spring:
+#  application:
+#    name: test
