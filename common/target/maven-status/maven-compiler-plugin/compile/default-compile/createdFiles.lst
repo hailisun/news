@@ -1,0 +1,6 @@
+com/haili/controller/BaseController.class
+com/haili/model/BaseModel.class
+com/haili/model/request/BaseRequest.class
+com/haili/service/BaseService.class
+com/haili/Redis.class
+com/haili/model/response/BaseResponse.class

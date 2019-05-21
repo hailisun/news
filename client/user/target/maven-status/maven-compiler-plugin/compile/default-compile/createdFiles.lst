@@ -1,0 +1,6 @@
+com/haili/user/mapper/UserMapper.class
+com/haili/user/model/request/LoginRequest.class
+com/haili/user/service/UserService.class
+com/haili/user/model/bean/UserBean.class
+com/haili/user/controller/UserController.class
+com/haili/Application.class

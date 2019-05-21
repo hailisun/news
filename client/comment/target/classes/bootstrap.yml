@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      name: comment,database,redis
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config
+  application:
+      name: comment
+    profiles:
+      active: dev
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 8083
